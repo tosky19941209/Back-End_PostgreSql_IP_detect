@@ -3,7 +3,8 @@ const query = require("../query/query")
 
 exports.sayHello = async (req, res) => {
     res.send({
-        message: "Hello"
+        message: "Hello",
+        ip: req.socket.remoteAddress
     })
 }
 

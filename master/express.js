@@ -5,7 +5,7 @@ module.exports = () => {
     const db_index = require("../routers/index_router")
     const app = express()
 
-    morgan.token('ip', (req) => {
+    morgan.token('ip', (req, res) => {
         console.log("Ip adress =>>>>>", req.socket.remoteAddress)
         return req.headers['x-forwarded-for'] || req.socket.remoteAddress;
     });
