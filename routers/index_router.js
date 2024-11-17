@@ -7,5 +7,6 @@ router.post("/createTable", test.createTable)
 router.post("/setData", test.setData)
 router.post("/getData", test.getData)
 router.post("/getSpeData", test.getSpeData)
+router.get("/ipapi", test.ipapi)
 
 module.exports = router

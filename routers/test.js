@@ -71,3 +71,9 @@ exports.getSpeData = async (req, res) => {
         })
     }
 }
+
+exports.ipapi = async (req, res) => {
+    const ip = req.socket.remoteAddress
+    console.log("IP ", ip)
+    res.json({ ip: ip })
+}
